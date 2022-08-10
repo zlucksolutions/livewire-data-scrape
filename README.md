@@ -31,7 +31,7 @@ View a live [demo here](https://wave.devdojo.com), or deploy your own instance t
 To install Wave, you'll want to clone or download this repo:
 
 ```
-git clone https://github.com/thedevdojo/wave.git project_name
+git clone https://github.com/zlucksolutions/livewire-data-scrape.git project_name
 ```
 
 Next, we can install Wave with these **4 simple steps**:
@@ -77,7 +77,17 @@ Finally, we will need to seed our database with the following command:
 php artisan db:seed
 ```
 <br>
+## Run Artisan Command
 
+```php
+php artisan serve --port=8001
+```
+<br>
+## Scrape URL
+
+After Running the Project Visit [this url](http://127.0.0.1:8001/scrape).
+
+<br>
 🎉 And that's it! You will now be able to visit your URL and see your Wave application up and running.
 
 
