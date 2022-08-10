@@ -82,5 +82,6 @@
     @endif
     @waveCheckout
 
+    @yield('scripts')
 </body>
 </html>

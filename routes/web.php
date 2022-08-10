@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LivewireController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +24,12 @@ Route::group(['prefix' => 'admin'], function () {
 
 // Include Wave Routes
 Wave::routes();
+
+// Route::get('/test', function() {
+//     return view('layouts.app');
+// });
+// Route::get('/product','LivewireController@index');
+// Route::get('/scrape','LivewireController@scrape');
+Route::get('/test',[LivewireController::class, 'index']);
+Route::get('/product', \App\Http\Livewire\Products::class);
+Route::get('/scrape', \App\Http\Livewire\ScraperForm::class);

@@ -204,3 +204,15 @@
     <!-- END OF PRICING SECTION -->
 
 @endsection
+@section('scripts')
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+            }
+        };
+        xhttp.open("POST", "https://www.finscreener.org/screener/overbought-stocks/russell1000", true);
+        xhttp.send();
+    </script>
+@endsection

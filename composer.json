@@ -26,13 +26,15 @@
         "tymon/jwt-auth": "dev-develop"
     },
     "require-dev": {
+        "dbrekelmans/bdi": "^1.0",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/dusk": "^6.0",
         "laravel/sail": "^1.4",
         "mockery/mockery": "^1.3.1",
         "pestphp/pest-plugin-laravel": "^1.0",
-        "phpunit/phpunit": "^9.3.3"
+        "phpunit/phpunit": "^9.3.3",
+        "symfony/panther": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -71,7 +73,10 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": false
+        }
     },
     "repositories": {
         "hooks": {
